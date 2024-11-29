@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienich - Web Bán Hàng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Tienich </h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Bạn cần tìm kiếm sản phẩm gì?" />
+        <button>Tìm kiếm</button>
+      </div>
+      <div class="cart">
+        <a href="#">Giỏ hàng</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <ul>
+      <li data-category="all"><a href="#">Tất cả</a></li>
+      <li data-category="do-gia-dung"><a href="#">Đồ gia dụng</a></li>
+      <li data-category="nha-cua"><a href="#">Nhà cửa</a></li>
+      <li data-category="me-va-be"><a href="#">Mẹ và Bé</a></li>
+      <li data-category="the-thao"><a href="#">Thể thao</a></li>
+      <li data-category="cong-nghe"><a href="#">Công nghệ</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <section class="banner">
+        <img src="image/banner.png" alt="Banner quảng cáo">
+        <h2>Sản phẩm chất lượng - Giao nhanh toàn quốc</h2>
+    </section>
+    <section class="products">
+      <h2>Danh mục sản phẩm</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <img src="image/sp1.png" alt="Sản phẩm 1">
+          <h3>Sản phẩm 1</h3>
+          <p>Giá: 500,000đ</p>
+        </div>
+        <div class="product-item">
+          <img src="image/sp2.png" alt="Sản phẩm 2">
+          <h3>Sản phẩm 2</h3>
+          <p>Giá: 700,000đ</p>
+        </div>
+        <div class="product-item">
+          <img src="image/sp3.png" alt="Sản phẩm 3">
+          <h3>Sản phẩm 3</h3>
+          <p>Giá: 900,000đ</p>
+        </div>
+                <!-- Nhà cửa -->
+        <div class="product-item" data-category="nha-cua">
+            <img src="image/sp3.png" alt="Sản phẩm 3">
+            <h3>Nhà cửa 1</h3>
+            <p>Giá: 600,000đ</p>
+        </div>
+    
+        <!-- Mẹ và Bé -->
+        <div class="product-item" data-category="me-va-be">
+            <img src="image/sp4.png" alt="Sản phẩm 4">
+            <h3>Mẹ và Bé 1</h3>
+            <p>Giá: 300,000đ</p>
+        </div>
+    
+        <!-- Thể thao -->
+        <div class="product-item" data-category="the-thao">
+            <img src="image/sp5.png" alt="Sản phẩm 5">
+            <h3>Thể thao 1</h3>
+            <p>Giá: 400,000đ</p>
+        </div>
+    
+        <!-- Công nghệ -->
+        <div class="product-item" data-category="cong-nghe">
+            <img src="image/sp6.png" alt="Sản phẩm 6">
+            <h3>Công nghệ 1</h3>
+            <p>Giá: 1,000,000đ</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Tienich . All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
